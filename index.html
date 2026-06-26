@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS_RT | Master Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo magnetic-btn">
+                <span class="logo-bracket">[</span>LAS_RT<span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link magnetic-btn">Home</a>
+                <a href="#projects" class="nav-link magnetic-btn">Projects</a>
+                <a href="#connect" class="nav-link magnetic-btn">Connect</a>
+                <a href="#recruit" class="nav-link nav-cta magnetic-btn">Join Team</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="mobile-link">Home</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#connect" class="mobile-link">Connect</a>
+        <a href="#recruit" class="mobile-link mobile-cta">Join Team</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge" data-gsap="fade-up">
+                <span class="badge-dot"></span>
+                <span class="badge-text">SYSTEM ONLINE</span>
+            </div>
+            <h1 class="hero-title" data-gsap="fade-up" data-delay="0.1">
+                <span class="title-line">LAS_RT</span>
+                <span class="title-divider"></span>
+                <span class="title-sub">Master Developer</span>
+            </h1>
+            <p class="hero-subtext" data-gsap="fade-up" data-delay="0.2">
+                Roblox Engine Specialist <span class="separator">|</span> Full-Stack Architect <span class="separator">|</span> UI/UX Designer
+            </p>
+            <div class="hero-cta-group" data-gsap="fade-up" data-delay="0.3">
+                <a href="#projects" class="btn-primary magnetic-btn">
+                    <span>View Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#connect" class="btn-secondary magnetic-btn">Connect</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="section-header" data-gsap="fade-up">
+                <span class="section-tag">// PROJECTS</span>
+                <h2 class="section-title">Deployed <span class="accent">Systems</span></h2>
+                <p class="section-desc">High-performance applications engineered for scale and security.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Lassential Antivirus -->
+                <article class="project-card" data-gsap="fade-up" data-delay="0.1">
+                    <div class="card-image-wrapper">
+                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80');"></div>
+                        <div class="card-image-overlay"></div>
+                        <div class="card-badge flagship">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            FLAGSHIP
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">Security Suite</span>
+                            <span class="card-stats">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                                </svg>
+                                1,000+ Downloads
+                            </span>
+                        </div>
+                        <h3 class="card-title">Lassential Antivirus</h3>
+                        <p class="card-desc">Next-generation threat detection engine with real-time system monitoring, heuristic analysis, and zero-day exploit protection. Built for performance without compromise.</p>
+                        <div class="card-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Windows API</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: LongShot -->
+                <article class="project-card" data-gsap="fade-up" data-delay="0.2">
+                    <div class="card-image-wrapper">
+                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80');"></div>
+                        <div class="card-image-overlay"></div>
+                        <div class="card-badge active">
+                            <span class="pulse-dot"></span>
+                            ACTIVE DEV
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-category">FPS Game Engine</span>
+                            <span class="card-stats">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                In Development
+                            </span>
+                        </div>
+                        <h3 class="card-title">LongShot</h3>
+                        <p class="card-desc">A next-generation tactical FPS built on a custom Roblox engine framework. Features advanced ballistics, dynamic lighting, and competitive ranked matchmaking infrastructure.</p>
+                        <div class="card-tech">
+                            <span class="tech-tag">Roblox Lua</span>
+                            <span class="tech-tag">Custom Engine</span>
+                            <span class="tech-tag">Networking</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section class="connect" id="connect">
+        <div class="section-container">
+            <div class="section-header" data-gsap="fade-up">
+                <span class="section-tag">// NETWORK</span>
+                <h2 class="section-title">Establish <span class="accent">Connection</span></h2>
+                <p class="section-desc">Link up across all channels. Choose your protocol.</p>
+            </div>
+
+            <div class="connect-grid" data-gsap="fade-up" data-delay="0.1">
+                <!-- Gaming YouTube -->
+                <a href="https://www.youtube.com/@Las_RT" target="_blank" rel="noopener noreferrer" class="connect-card magnetic-btn">
+                    <div class="connect-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                    <div class="connect-info">
+                        <h3>YouTube Gaming</h3>
+                        <p>@Las_RT</p>
+                    </div>
+                    <div class="connect-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Dev YouTube -->
+                <a href="https://www.youtube.com/@LasDev11" target="_blank" rel="noopener noreferrer" class="connect-card magnetic-btn">
+                    <div class="connect-icon dev">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                    <div class="connect-info">
+                        <h3>YouTube Dev</h3>
+                        <p>@LasDev11</p>
+                    </div>
+                    <div class="connect-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Discord -->
+                <a href="https://discord.gg/qT7SYpCX5m" target="_blank" rel="noopener noreferrer" class="connect-card magnetic-btn">
+                    <div class="connect-icon discord">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </div>
+                    <div class="connect-info">
+                        <h3>Discord Server</h3>
+                        <p>Join the Community</p>
+                    </div>
+                    <div class="connect-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/lasomed22" target="_blank" rel="noopener noreferrer" class="connect-card magnetic-btn">
+                    <div class="connect-icon instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                        </svg>
+                    </div>
+                    <div class="connect-info">
+                        <h3>Instagram</h3>
+                        <p>@lasomed22</p>
+                    </div>
+                    <div class="connect-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruitment Section -->
+    <section class="recruit" id="recruit">
+        <div class="section-container">
+            <div class="recruit-content" data-gsap="fade-up">
+                <div class="recruit-visual">
+                    <div class="recruit-ring"></div>
+                    <div class="recruit-ring ring-2"></div>
+                    <div class="recruit-ring ring-3"></div>
+                    <div class="recruit-center">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="recruit-title">Ready to <span class="accent">Build</span> the Future?</h2>
+                <p class="recruit-desc">We're assembling an elite team of developers, designers, and visionaries. If you push boundaries and write code that matters, we want you.</p>
+                <button class="btn-recruit magnetic-btn" id="joinTeamBtn">
+                    <span class="btn-text">JOIN THE TEAM</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-bracket">[</span>LAS_RT<span class="logo-bracket">]</span>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#connect">Connect</a>
+                <a href="#recruit">Join Team</a>
+            </div>
+            <div class="footer-copy">
+                <span class="copy-symbol">&copy;</span> 2026 LAS_RT. All systems operational.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container" id="modalContainer">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <span class="modal-tag">// TRANSMISSION</span>
+                <h3 class="modal-title">Establish Contact</h3>
+                <p class="modal-subtitle">Send a secure transmission to command.</p>
+            </div>
+            <form class="modal-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="formName" class="form-label">Operative Name</label>
+                    <input type="text" id="formName" class="form-input" placeholder="Enter your callsign" required autocomplete="name">
+                    <span class="form-focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <label for="formEmail" class="form-label">Secure Channel (Email)</label>
+                    <input type="email" id="formEmail" class="form-input" placeholder="your@email.com" required autocomplete="email">
+                    <span class="form-focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <label for="formMessage" class="form-label">Transmission Content</label>
+                    <textarea id="formMessage" class="form-input form-textarea" placeholder="Describe your skills, experience, and why you want to join..." required rows="4"></textarea>
+                    <span class="form-focus-border"></span>
+                </div>
+                <button type="submit" class="btn-submit magnetic-btn">
+                    <span>Send Transmission</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
